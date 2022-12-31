@@ -1,32 +1,32 @@
-*{
+* {
     text-decoration: none;
 }
 
-body{
+body {
     font-family: 'Signika Negative', sans-serif;
-    font-weight: 400; 
+    font-weight: 400;
     margin: 0;
 }
 
-.head::before{
+.head::before {
     content: "";
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    position:absolute;
+    position: absolute;
     background: url('9442.jpg') no-repeat center center/cover;
     z-index: -1;
     opacity: 0.8;
-} 
+}
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     height: 82px;
 }
 
-nav::before{
+nav::before {
     /* background-color:gray; */
     content: "";
     position: absolute;
@@ -39,7 +39,7 @@ nav::before{
 
 }
 
-.items{
+.items {
     padding-left: 0px;
     display: flex;
     /* background-color: yellow; */
@@ -49,7 +49,7 @@ nav::before{
 }
 
 /* li elements in nav bar */
-.obj{
+.obj {
     /* background-color: green; */
     padding: 5px;
     padding-inline: 29px;
@@ -57,17 +57,17 @@ nav::before{
     color: white;
     background-color: rgb(63, 63, 221);
     border-radius: 20px;
-    
+
 }
 
-.obj:hover{
+.obj:hover {
     color: grey;
     background-color: lightblue;
     transition: 0.3s;
     cursor: pointer;
 }
 
-#logo{
+#logo {
     height: 60px;
     width: 70px;
     margin-top: 9px;
@@ -77,25 +77,25 @@ nav::before{
 }
 
 
-input{
+input {
     font-family: 'Signika Negative', sans-serif;
     font-weight: 400;
-    position:relative;
+    position: relative;
     margin: 0px;
 }
 
-section{
+section {
     display: flex;
-    justify-content:center;
-   position: relative;
+    justify-content: center;
+    position: relative;
 }
 
-.heading{
+.heading {
     text-align: center;
     margin-top: 15%;
 }
 
-.box{
+.box {
     margin: 5px;
     margin-top: 10px;
     align-content: center;
@@ -103,17 +103,17 @@ section{
     height: 2.8em;
     width: 18rem;
     text-align: center;
-    
+
 }
 
-.text{
+.text {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.sub{
+.sub {
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -121,7 +121,7 @@ section{
     padding: 10px;
 }
 
-#subbtn{
+#subbtn {
     border-radius: 31px;
     height: 2.8em;
     width: 15rem;
@@ -133,50 +133,60 @@ section{
     cursor: pointer;
 }
 
-#subbtn:hover{
+#subbtn:hover {
     transition: 400ms;
-    height: 3.5em;
-    width: 20em;
+     background-color: rgb(14, 77, 173);
+    color: blanchedalmond;
 }
 
-#b1,#b2,#b3{
+#subbtn:active {
+    background-color: rgb(14, 77, 173);
+    color: blanchedalmond;
+    box-shadow: 3px 2px #666;
+    transform: translateY(4px);
+}
+
+#b1,
+#b2,
+#b3 {
     border-color: rgba(133, 173, 206, 0.4);
     box-shadow: 3px 4px 6px 0px grey;
     text-decoration: none;
     border: none;
+    outline: none;
 }
 
-#b1:focus{
+#b1:focus {
     background-color: red;
     size: 2px;
     transition: 400ms;
 }
 
-#b2:focus{
+#b2:focus {
     background-color: red;
     transition: 400ms;
 }
 
-#b3:focus{
+#b3:focus {
     background-color: red;
     transition: 400ms;
 }
 
-#b1:hover{
+#b1:hover {
     /* background-color: red; */
     transition: 400ms;
     height: 3em;
     width: 19em;
 }
 
-#b2:hover{
+#b2:hover {
     /* background-color: red; */
     transition: 400ms;
     height: 3em;
     width: 19em;
 }
 
-#b3:hover{
+#b3:hover {
     /* background-color: red; */
     transition: 400ms;
     height: 3em;
