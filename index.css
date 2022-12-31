@@ -3,7 +3,8 @@
 }
 
 body{
-    font-family: 'Pacifico', cursive; 
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 400; 
     margin: 0;
 }
 
@@ -77,8 +78,8 @@ nav::before{
 
 
 input{
-    font-family: 'Pacifico', cursive;
-    font-size: medium;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 400;
     position:relative;
     margin: 0px;
 }
