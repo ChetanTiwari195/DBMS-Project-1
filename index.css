@@ -7,8 +7,16 @@ body{
     margin: 0;
 }
 
-.head{
+.head::before{
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position:absolute;
     background: url('9442.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.8;
 } 
 
 nav{
@@ -36,6 +44,7 @@ nav::before{
     /* background-color: yellow; */
     list-style-type: none;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 /* li elements in nav bar */
@@ -47,7 +56,7 @@ nav::before{
     color: white;
     background-color: rgb(63, 63, 221);
     border-radius: 20px;
-
+    
 }
 
 .obj:hover{
@@ -66,14 +75,28 @@ nav::before{
     cursor: pointer;
 }
 
+
+input{
+    font-family: 'Pacifico', cursive;
+    font-size: medium;
+    position:relative;
+    margin: 0px;
+}
+
 section{
     display: flex;
     justify-content:center;
+   position: relative;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 15%;
 }
 
 .box{
     margin: 5px;
-    margin-top: 14rem;
+    margin-top: 10px;
     align-content: center;
     border-radius: 31px;
     height: 2.8em;
@@ -83,6 +106,7 @@ section{
 }
 
 .text{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -101,4 +125,59 @@ section{
     height: 2.8em;
     width: 15rem;
     text-align: center;
+    border: none;
+    border-color: rgba(133, 173, 206, 0.4);
+    box-shadow: 3px 4px 6px 0px grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#subbtn:hover{
+    transition: 400ms;
+    height: 3.5em;
+    width: 20em;
+}
+
+#b1,#b2,#b3{
+    border-color: rgba(133, 173, 206, 0.4);
+    box-shadow: 3px 4px 6px 0px grey;
+    text-decoration: none;
+    border: none;
+}
+
+#b1:focus{
+    background-color: red;
+    size: 2px;
+    transition: 400ms;
+}
+
+#b2:focus{
+    background-color: red;
+    transition: 400ms;
+}
+
+#b3:focus{
+    background-color: red;
+    transition: 400ms;
+}
+
+#b1:hover{
+    /* background-color: red; */
+    transition: 400ms;
+    height: 3em;
+    width: 19em;
+}
+
+#b2:hover{
+    /* background-color: red; */
+    transition: 400ms;
+    height: 3em;
+    width: 19em;
+}
+
+#b3:hover{
+    /* background-color: red; */
+    transition: 400ms;
+    height: 3em;
+    width: 19em;
 }
