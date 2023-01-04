@@ -127,7 +127,22 @@ input {
     height: 2.8em;
     width: 18rem;
     text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-color: rgba(133, 173, 206, 0.4);
+    text-decoration: none;
+    border: rgb(216, 208, 208, 0.4);
+    outline: none;
+}
 
+.box:focus {
+    background-color: rgba(222, 230, 243, 0.966);
+    size: 2px;
+    transition: 400ms;
+}
+
+.box:hover {
+    transition: 400ms;
+    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.4);
 }
 
 .text {
@@ -136,6 +151,22 @@ input {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.previous {
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    display: inline-block;
+    color: black;
+}
+
+.previous:hover,
+.next:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 50%;
+}
+
+
 
 .sub {
     display: flex;
@@ -170,48 +201,7 @@ input {
     transform: translateY(4px);
 }
 
-#b1,
-#b2,
-#b3 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-color: rgba(133, 173, 206, 0.4);
-    text-decoration: none;
-    border: rgb(216, 208, 208, 0.4);
-    outline: none;
-}
 
-#b1:focus {
-    background-color: rgba(222, 230, 243, 0.966);
-    size: 2px;
-    transition: 400ms;
-}
-
-#b2:focus {
-    background-color: rgba(222, 230, 243, 0.966);
-    transition: 400ms;
-}
-
-#b3:focus {
-    background-color: rgba(222, 230, 243, 0.966);
-    transition: 400ms;
-}
-
-#b1:hover {
-    transition: 400ms;
-    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.4);
-}
-
-#b2:hover {
-    transition: 400ms;
-    box-shadow: 3px 4px 6px 0px grey;
-    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.4);
-}
-
-#b3:hover {
-    transition: 400ms;
-    box-shadow: 3px 4px 6px 0px grey;
-    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.4);
-}
 
 #card_selector {
     display: flex;
