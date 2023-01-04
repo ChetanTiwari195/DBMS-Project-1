@@ -14,11 +14,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="head">
+    <div class="head">
         <nav class="navigation">
             <div class="left">
                 <img id="logo" src="pngegg.png" alt="logo">
@@ -32,26 +35,90 @@
                 </ul>
             </div>
         </nav>
-    </header>
-    <div class="heading">
-        <h1>
-            Book Your Tickets
-        </h1>
-    </div>
-    <section>
-        <form action="" method="post" class="form">
-            <div class="text">
-                <input type="text" placeholder="From" class="box" id="b1">
-                <input type="email" placeholder="Where" class="box" id="b2">
-                <input type="date" placeholder="Date" class="box" id="b3">
+        <section id="form">
+            <div class="heading">
+                <h1>
+                    Book Your Tickets
+                </h1>
+            </div>
+            <form action="" method="post">
+                <div class="text">
+                <input type="text" placeholder="From" class="box" id="From">
+                <input type="text" placeholder="Where" class="box" id="Where">
+                <input type="date" placeholder="Date" class="box" id="Depart">
+                <input type="date" placeholder="Date" class="box" id="Return">
+                <input type="number" placeholder="Passangers" class="box" id="Passengers">
             </div>
             <div class="sub">
                 <input type="button" value="submit" id="subbtn">
             </div>
         </form>
     </section>
-
-
+    </div>
+    <div id="card_selector">
+        <div class="cards">
+            <img src="card1.jpg" alt="Avatar" style="width:100%" class="card_img">
+            <div class="container">
+                <h4><b>Malaysia</b></h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam expedita modi non sint quo magnam eaque, totam sit magni corrupti sequi cum delectus?</p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="card2.jpeg" alt="Avatar" style="width:100%" class="card_img">
+            <div class="container">
+                <h4><b>Maldives</b></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quasi deleniti, commodi eos dignissimos iusto ipsum, aspernatur neque assumenda similique laboriosam quisquam expedita.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="card3.jpeg" alt="Avatar" style="width:100%" class="card_img">
+            <div class="container">
+                <h4><b>India</b></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quasi deleniti, commodi eos dignissimos iusto ipsum, aspernatur neque assumenda similique laboriosam quisquam expedita.</p>
+            </div>
+        </div>
+        <!-- <div class="cards">
+            <img src="card4.jpeg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>John Doe</b></h4>
+                <p>Architect & Engineer</p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="card5.jpeg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>John Doe</b></h4>
+                <p>Architect & Engineer</p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="card6.jpeg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>John Doe</b></h4>
+                <p>Architect & Engineer</p>
+            </div>
+        </div> -->
+    </div>
+    <div class="article1">
+        <div class="arc-img-div">
+            <img src="arc1.jpg" alt="article1" class="arc-img">
+        </div>
+        <div class="arc-material">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, rem quis? Saepe odio enim fugiat sint dicta
+            ea sed, corrupti nihil error iste, beatae nobis, reprehenderit cumque dolorum ipsam officiis. Praesentium ab
+            maiores similique cumque velit, esse temporibus harum sequi consequuntur nulla omnis, sed cupiditate earum?
+        </div>
+    </div>
+    <div class="article2">
+        <div class="arc-img-div">
+            <img src="arc2.jpg" alt="article2" class="arc-img">
+        </div>
+        <div class="arc-material">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, rem quis? Saepe odio enim fugiat sint dicta
+            ea sed, corrupti nihil error iste, beatae nobis, reprehenderit cumque dolorum ipsam officiis. Praesentium ab
+            maiores similique cumque velit, esse temporibus harum sequi consequuntur nulla omnis, sed cupiditate earum?
+        </div>
+    </div>
 </body>
 
 </html>
