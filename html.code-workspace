@@ -1,24 +1,7 @@
 {
-	"folders": [
-		{
-			"path": ".."
-		}
-	],
-	"settings": {
-		"files.associations": {
-			"2.C": "cpp",
-			"3EVALUAT.C": "cpp",
-			"5.C": "cpp",
-			"4.C": "cpp",
-			"AREA.C": "cpp",
-			"HELLO.C": "cpp",
-			"DAY2-2.C": "cpp",
-			"DAY2-3.C": "cpp",
-			"CONCATIN.C": "cpp",
-			"3_STACK_.C": "cpp",
-			"WORKSH~1.C": "cpp"
-		},
-		"liveServer.settings.multiRootWorkspaceName": "html",
-		"sqltools.connections": []
-	}
+    "folders": [
+        {
+            "path": ".."
+        }
+    ]
 }

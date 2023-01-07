@@ -21,7 +21,7 @@ html {
 
 .head::before {
     content: "";
-    background-image: url('full-shot-travel-concept-with-landmarks.jpg');
+    background-image: url('../assets/full-shot-travel-concept-with-landmarks.jpg');
     height: 65vh;
     background-attachment: fixed;
     background-size: cover;
