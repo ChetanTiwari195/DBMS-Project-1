@@ -279,7 +279,7 @@ input {
     flex-direction: row-reverse;
 }
 
-.hr{
+.footer{
     display: grid;
     background-color: rgba(0, 0, 0, 0.863);
 }
