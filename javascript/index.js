@@ -2,25 +2,26 @@ let passengers = document.querySelector("#Passengers");
 let btn = document.querySelector("#subbtn");
 let depart = document.querySelector("#Depart");
 let returnDate = document.querySelector("#Return");
-let oneway = document.querySelector("#oneway")
-let returnRadio = document.querySelector("#return")
-let toggle = [oneway, returnRadio]
+let oneway = document.querySelector("#oneway");
+let returnRadio = document.querySelector("#return");
+let toggle = [oneway, returnRadio];
 
-toggle.forEach(item => {
+// to toggle return field on and off
+toggle.forEach((item) => {
   item.addEventListener("click", () => {
     if (oneway.checked == true) {
-      returnDate.style.display = "none"
-      return
+      returnDate.style.display = "none";
+      return;
     }
 
     if (oneway.checked == false) {
-      returnDate.style.display = "block"
-      return
+      returnDate.style.display = "block";
+      return;
     }
-  })
-})
+  });
+});
 
-
+//for invalid inputs like departure date less than current date, return date less than departure date and number of passangers should not be less tha 0
 btn.addEventListener("click", (d1, d2) => {
   let date1 = new Date(depart.value);
   let date2 = new Date(returnDate.value);
