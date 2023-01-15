@@ -2,9 +2,36 @@ let passengers = document.querySelector("#Passengers");
 let btn = document.querySelector("#subbtn");
 let depart = document.querySelector("#Depart");
 let returnDate = document.querySelector("#Return");
+let selecDate = [depart, returnDate];
 let oneway = document.querySelector("#oneway");
 let returnRadio = document.querySelector("#return");
 let toggle = [oneway, returnRadio];
+
+// adds date placeholder for date inputs
+selecDate.forEach((selec) => {
+  selec.addEventListener("focus", function () {
+    if(this.type == "date"){
+      this.type="text"
+    }
+    else{
+      this.type="date"
+    }
+    
+  })
+})
+
+// adds date placeholder for date inputs
+selecDate.forEach((selec) => {
+  selec.addEventListener("blur", function () {
+    if(this.type == "date"){
+      this.type="text"
+    }
+    else{
+      this.type="date"
+    }
+    
+  })
+})
 
 // to toggle return field on and off
 toggle.forEach((item) => {
